@@ -1,0 +1,26 @@
+---
+import Newsletter from '../components/newsletter.astro';
+---
+<section class="bg-gray-100 py-12 mt-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-4">Join Our Newsletter</h2>
+      <p class="text-lg text-slate-600 mb-8">
+        Stay updated with the latest news, tips, and exclusive offers from NELA Cleaners. Subscribe to our newsletter and never miss an update!
+      </p>
+      <form class="flex flex-col sm:flex-row justify-center gap-4">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full sm:w-80 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+  
