@@ -3,21 +3,20 @@ import { Picture } from "astro:assets";
 import heroImage from "assets/nela-hero-2.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
-
 ---
 
 <main
   class="grid lg:grid-cols-2 place-items-center mt-1 mb-1 md:mt-6 md:mb-6">
   <div class="py-4 md:order-1 hidden md:block">
     <Picture
-    src={heroImage}
-    alt="Astronaut in the air"
-    widths={[600, 1200, 1800]}
-    sizes="(max-width: 1200px) 100vw, 1200px"
-    loading="eager"
-    format="avif"
-    class="hero-image"
-  />
+      src={heroImage}
+      alt="Astronaut in the air"
+      widths={[600, 1200, 1800]}
+      sizes="(max-width: 1200px) 100vw, 1200px"
+      loading="eager"
+      format="avif"
+      class="hero-image"
+    />
   </div>
   <div>
     <h1
@@ -29,20 +28,17 @@ import { Icon } from "astro-icon/components";
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
+        href="https://nelacleanerslosangeles.bookingkoala.com/booknow?embed=true"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
          Book Now
       </Link>
       <Link
         size="lg"
         style="outline"
         rel="noopener"
-        href="https://github.com/surjithctly/astroship"
+        href="tel:+13236012360"
         class="flex gap-1 items-center justify-center"
         target="_blank">
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
@@ -51,3 +47,6 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </main>
+
+<iframe src="https://nelacleanerslosangeles.bookingkoala.com/booknow?embed=true" style="border:none;height:1000px" width="100%" scrolling="no"></iframe>
+<script src="https://nelacleanerslosangeles.bookingkoala.com/resources/embed.js" defer></script>
