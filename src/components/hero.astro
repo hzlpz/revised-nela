@@ -9,13 +9,14 @@ import { Icon } from "astro-icon/components";
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
   <div class="py-4 md:order-1 hidden md:block">
     <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[400, 800, 1200]} 
-      sizes="(max-width: 1200px) 100vw, 800px"
-      loading="eager"
-      format="avif"
-    />
+    src={heroImage}
+    alt="Astronaut in the air"
+    widths={[600, 1200, 1800]}
+    sizes="(max-width: 1200px) 100vw, 1200px"
+    loading="eager"
+    format="avif"
+    class="w-72 h-auto" <!-- Adjust width with `w-` classes, height auto to maintain aspect ratio -->
+  />
   </div>
   <div>
     <h1
