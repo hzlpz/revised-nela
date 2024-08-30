@@ -1,0 +1,7 @@
+/* src/styles/global.css */
+.hero-image {
+    width: 100%; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
