@@ -35,36 +35,36 @@ const { title } = Astro.props;
     <meta name="author" content="NELA Cleaners">
     <link rel="icon" type="image/svg+xml" href="/nela-logo.svg" />
     <meta name="keywords" content="cleaning services, Los Angeles, deep cleaning, post-renovation cleaning, move-in cleaning, move-out cleaning, commercial cleaning">
-
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    <title>{makeTitle}</title>
     <SEO
-  title={`NELA Cleaners | Residential & Commercial Cleaning in Los Angeles, CA`}
-  description="NELA Cleaners offers expert residential and commercial cleaning services in Los Angeles, CA. Specializing in deep cleans, post-renovation cleanings, and move-in/move-out cleanings."
-  canonical={canonicalURL}
-  social={{
-    instagram: {
-      creator: "@nelacleaners", // Your Instagram handle
-      site: "@nelacleaners",
-      card: "summary_large_image",
-    },
-    facebook: {
-      page: "NELA Cleaners", // Your Facebook Page Name
-      url: "https://www.facebook.com/nelacleaners", // Your Facebook Page URL
-    }
-  }}
-  openGraph={{
-    basic: {
-      url: canonicalURL,
-      type: "website",
-      title: `NELA Cleaners | Expert Cleaning Services in Los Angeles`,
-      image: resolvedImageWithDomain,
-    },
-    image: {
-      alt: "NELA Cleaners provides top-notch cleaning services in Los Angeles.",
-    },
-  }}
-/>
+      title={`NELA Cleaners | Residential & Commercial Cleaning in Los Angeles, CA`}
+      description="NELA Cleaners offers expert residential and commercial cleaning services in Los Angeles, CA. Specializing in deep cleans, post-renovation cleanings, and move-in/move-out cleanings."
+      canonical={canonicalURL}
+      social={{
+        instagram: {
+          creator: "@nelacleaners",
+          site: "@nelacleaners",
+          card: "summary_large_image",
+        },
+        facebook: {
+          page: "NELA Cleaners",
+          url: "https://www.facebook.com/nelacleaners",
+        }
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `NELA Cleaners | Expert Cleaning Services in Los Angeles`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "NELA Cleaners provides top-notch cleaning services in Los Angeles.",
+        },
+      }}
+    />
   </head>
+  
   <body>
     <Navbar />
     <slot />

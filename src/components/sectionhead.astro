@@ -3,10 +3,10 @@ const { align = "center" } = Astro.props;
 ---
 
 <div class:list={["mt-16", align === "center" && "text-center"]}>
-  <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    <slot name="title">Title</slot>
+  <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-gray-800">
+    <slot name="title">Welcome to NELA Cleaners!</slot>
   </h1>
   <p class="text-lg mt-4 text-slate-600">
-    <slot name="desc">Some description goes here</slot>
+    <slot name="desc">We’re here to make your space shine with our friendly, reliable cleaning services. Serving Northeast Los Angeles and beyond, we take pride in delivering top-notch care for your home or business.</slot>
   </p>
 </div>
